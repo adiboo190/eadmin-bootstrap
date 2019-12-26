@@ -1,0 +1,93 @@
+// Button
+.btn {
+	&.btn-hover {
+		&-primary {
+			background: transparent;
+			color: $indigo !important;
+			&:hover {
+				background: rgba($indigo, 0.1);
+			}
+			&.active, &:focus {
+				background: $indigo !important;
+				color: $white !important;
+			}
+		}
+		&-danger {
+			background: transparent;
+			color: $red !important;
+			&:hover {
+				background: rgba($red, 0.1);
+			}
+			&.active, &:focus {
+				background: $red !important;
+				color: $white !important;
+			}
+		}
+		&-success {
+			background: transparent;
+			color: $teal !important;
+			&:hover {
+				background: rgba($teal, 0.1);
+			}
+			&.active, &:focus {
+				background: $teal !important;
+				color: $white !important;
+			}
+		}
+		&-info {
+			background: transparent;
+			color: $blue !important;
+			&:hover {
+				background: rgba($blue, 0.1);
+			}
+			&.active, &:focus {
+				background: $blue !important;
+				color: $white !important;
+			}
+		}
+		&-secondary {
+			background: transparent;
+			color: $purple !important;
+			&:hover {
+				background: rgba($purple, 0.1);
+			}
+			&.active, &:focus {
+				background: $purple !important;
+				color: $white !important;
+			}
+		}
+		&-warning {
+			background: transparent;
+			color: $yellow !important;
+			&:hover {
+				background: rgba($yellow, 0.1);
+			}
+			&.active, &:focus {
+				background: $yellow !important;
+				color: $white !important;
+			}
+		}
+		&-light {
+			background: transparent;
+			color: $gray-100 !important;
+			&:hover {
+				background: rgba($gray-100, 0.1);
+			}
+			&.active, &:focus {
+				background: $gray-100 !important;
+				color: $white !important;
+			}
+		}
+		&-dark {
+			background: transparent;
+			color: $gray-800 !important;
+			&:hover {
+				background: rgba($gray-800, 0.1);
+			}
+			&.active, &:focus {
+				background: $gray-800 !important;
+				color: $white !important;
+			}
+		}
+	}
+}

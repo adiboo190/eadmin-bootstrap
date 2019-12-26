@@ -1,0 +1,94 @@
+// Sidebar Menu
+.sidebar-menu {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: all .3s;
+    display: block;
+    .sidenav-menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100%;
+        .menu-item {
+            display: block;
+            width: 100%;
+            margin-bottom: .5rem;
+            .menu-link {
+                transition: all .3s;
+                display: block;
+                padding: 0.5rem 1rem;
+                color: $gray-600;
+                background-color: transparent;
+                background: transparent;
+                border-radius: 5px;
+                &:hover {
+                    background: rgba($indigo, 0.2);
+                    color: $indigo;
+                    text-decoration: none;
+                }
+                &:focus, &:active, &.active {
+                    background: rgba($indigo, 1);
+                    color: $white;
+                    text-decoration: none;
+                    box-shadow: 0 0.125rem 0.25rem rgba($black, 0.075) !important;
+                }
+
+                // Add Icon After Menu
+                &[data-toggle="collapse"]::after {
+                    width: 1rem;
+                    text-align: center;
+                    float: right;
+                    vertical-align: 0;
+                    border: 0;
+                    font-weight: 900;
+                    content: '\f105';
+                    font-family: 'Font Awesome 5 Free';
+                    transition: all .3s;
+                    -moz-transform:rotate(90deg);
+                    -webkit-transform:rotate(90deg);
+                    transform:rotate(90deg);
+                }
+                &.collapsed[data-toggle="collapse"]::after {
+                    width: 1rem;
+                    text-align: center;
+                    float: right;
+                    vertical-align: 0;
+                    border: 0;
+                    font-weight: 900;
+                    content: '\f105';
+                    font-family: 'Font Awesome 5 Free';
+                    transition: all .3s;
+                    -moz-transform:rotate(0deg);
+                    -webkit-transform:rotate(0deg);
+                    transform:rotate(0deg);
+                }
+            }
+            .collapse-inner {
+                padding: 1rem;
+                margin-top: .5rem;
+                border-radius: 5px;
+                a.collapse-link {
+                    width: 100%;
+                    display: block;
+                    padding: 0.5rem 1rem;
+                    border-radius: 5px;
+                    color: $gray-600;
+                    transition: all .3s;
+                    &:hover {
+                        background: rgba($indigo, 0.2);
+                        color: $indigo;
+                        text-decoration: none;
+                    }
+                    &:focus, &:active, &.active {
+                        background: rgba($indigo, 1);
+                        color: $white;
+                        text-decoration: none;
+                        box-shadow: 0 0.125rem 0.25rem rgba($black, 0.075) !important;
+                    }
+                }
+            }
+        }
+    }
+}

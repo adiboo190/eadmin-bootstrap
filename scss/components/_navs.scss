@@ -1,0 +1,18 @@
+// Navs
+.nav {
+	.nav-item {
+		.nav-link {
+			color: $indigo;
+			background: transparent;
+			border-radius: 5px;
+			&:hover {
+				color: $indigo !important;
+				background: rgba($indigo, 0.1);
+			}
+			&:focus, &:active, &.active {
+				color: $white !important;
+				background: $indigo !important;
+			}
+		}
+	}
+}

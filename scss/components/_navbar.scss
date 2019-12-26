@@ -1,0 +1,74 @@
+// Navbar
+.navbar {
+    &.navbar-light {
+        li.nav-item {
+            a.nav-link {
+                @media (max-width: $media-breakpoint-lg) {
+                    padding: 0.5rem 1rem;
+                    margin-top: .5rem;
+                }
+                &.no-caret::after {
+                    display: none !important;
+                }
+                color: $gray-600 !important;
+                background-color: transparent;
+                background: transparent;
+                &:hover {
+                    color: $indigo !important;
+                    background: rgba($indigo, .1);
+                    border-radius: 5px;
+                }
+                &:focus, &:active {
+                    background-color: $indigo;
+                    color: white !important;
+                    border-radius: 5px;
+                }
+            }
+            &.active a.nav-link {
+                background-color: $indigo;
+                color: white !important;
+                border-radius: 5px;
+                &:hover, &:focus {
+                    background-color: $indigo;
+                    color: white !important;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    &.navbar-dark {
+        li.nav-item {
+            a.nav-link {
+                @media (max-width: $media-breakpoint-lg) {
+                    padding: 0.5rem 1rem;
+                    margin-top: .5rem;
+                }
+                &.no-caret::after {
+                    display: none !important;
+                }
+                color: $gray-200 !important;
+                background-color: transparent;
+                background: transparent;
+                border-radius: 5px;
+                &:hover {
+                    color: $indigo !important;
+                    background: rgba($indigo, .1);
+                }
+                &:focus, &:active {
+                    background-color: $indigo;
+                    color: white !important;
+                }
+            }
+            &.active a.nav-link {
+                background-color: $indigo;
+                color: white !important;
+                border-radius: 5px;
+                &:hover, &:focus {
+                    background-color: $indigo;
+                    color: white !important;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+// Alert
+.alert {
+	&.alert {
+		&-danger, &-primary, &-success, &-dark, &-info, &-warning {
+			color: $white !important;
+		}
+	}
+}
